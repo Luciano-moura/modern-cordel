@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#publicacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    top: 200px;
+
+    
+}
+.publicacao_principal {
+display: flex;
+flex-direction: wrap;
+flex-wrap: wrap;
+padding: 30px;
+gap: 30px;
+
+}
+.publicacao_principal img{
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: 5px 10px 5px 5px rgb(201, 245, 201);
+    border-radius: 100%;
+}
+.publicacao_principal img:hover{
+    border-radius: 100%;
+    animation-name: loading ;
+    animation-duration: 7s;
+
+
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
